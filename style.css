@@ -1,0 +1,74 @@
+/* general styling */
+body {
+    font-family: 'Mulish', sans-serif; /* Example font - you can change this */
+    margin: 0;
+    background-color: #f8f8f8; /* Off-white background color */
+    color: #333; /* Dark gray text color */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* header styling */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    height: 50px; /* Adjust as needed */
+}
+
+/* main content styling */
+main {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 250px; /* Adjust column widths as needed */
+    gap: 40px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+/* sections grid styling */
+.sections-grid {
+    display: grid;
+    grid-template-rows: repeat(9, 1fr); /* 9 rows for the section headers */
+    gap: 10px; 
+}
+
+.section-header {
+    writing-mode: vertical-rl; /* Orient text vertically */
+    text-orientation: upright; 
+    background: linear-gradient(to bottom, #d90000, #8c0000); /* Red gradient */
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* footer styling */
+footer {
+    background-color: #333; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#join-button {
+    background-color: #d90000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
