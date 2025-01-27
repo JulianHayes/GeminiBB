@@ -72,3 +72,36 @@ footer {
     font-size: 1em;
     cursor: pointer;
 }
+#load-more-container {
+  text-align: center; /* Center the roundel */
+}
+
+.load-more-roundel {
+  width: 100px; /* Adjust size as needed */
+  height: 100px;
+  border-radius: 50%;
+  background-color: #d90000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; /* Indicate it's clickable */
+  position: relative; /* For positioning the rotating text */
+}
+
+.rotating-text {
+  animation: rotateText 10s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes rotateText {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#hidden-cards {
+  display: none; /* Initially hide the additional cards */
+}
